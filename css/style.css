@@ -175,7 +175,7 @@ body:has(#contact:target) li a[href="contact"]
 {
  .scroll-icon
  {
-    margin-top: 50px;
+    margin-top: 30px;
  }
 }
 @media screen and (max-width :1200px)
@@ -198,7 +198,7 @@ body:has(#contact:target) li a[href="contact"]
 }
  .scroll-icon
 {
-    margin-top: 5px;
+    margin-top: 0px;
 } 
 .write
    {
@@ -210,6 +210,10 @@ body:has(#contact:target) li a[href="contact"]
     left: 42%;
     
    } 
+   .gear
+{
+    top: 0%;
+}
 }
 @media screen and (max-width :600px)
 {
@@ -223,7 +227,7 @@ body:has(#contact:target) li a[href="contact"]
 }
 .scroll-icon
 {
-    margin-top: 20px;
+    margin-top: 0px;
 }
    .write
    {
@@ -231,6 +235,6 @@ body:has(#contact:target) li a[href="contact"]
    } 
    .gear
 {
-    top: 30%;
+    top: 0%;
 }
 }
