@@ -1,0 +1,228 @@
+:root
+{
+    --main-color: rgb(218, 60, 113);
+
+}
+
+
+main
+{
+    min-height: 100%;
+    background-image: url(../images/header-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+main h1
+{
+    font-size: 65px;
+}
+.text
+{
+    width: 500px;
+}
+.scroll-icon
+{
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    border: 3px solid white;
+    border-radius: 45%;
+    animation: animate 1s infinite;
+    margin-top: 30px;
+}
+.scroll-icon::after
+{
+    content: "";
+    width: 3px;
+    height: 10px;
+   background-color: white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@keyframes animate
+{
+    0%{
+        transform: translate(-50%,50%);
+        
+    }
+    50%{
+        transform: translate(-50%,0%);
+        
+    }
+     100%{
+        transform: translate(-50%,50%);
+        
+    }
+    } 
+
+.gear
+{
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.arrow
+{
+    position: fixed;
+    right: 3%;
+    top: 92%;
+    background-color: var(--main-color);
+}
+.nav-link
+{
+    color: white;
+}
+.nav-link:hover
+{
+    color: var(--main-color);
+}
+
+body:not(body:has(:target)) li a[href="#home"],
+body:has(#home:target) li a[href="#home"],
+body:has(#about:target) li a[href="#about"],
+body:has(#services:target) li a[href="#services"],
+body:has(#client:target) li a[href="#client"],
+body:has(#portfolio:target) li a[href="portfolio"],
+body:has(#blog:target) .li a[href="blog"],
+body:has(#contact:target) li a[href="contact"]
+{
+    color: var(--main-color);
+}
+.font-color
+{
+    color: var(--main-color);
+}
+.fa-brands
+{
+    width: 44px;
+    height: 44px;
+    border: 3px solid rgba(128, 128, 128, 0.37);
+    transition: 1s;
+}
+.fa-brands:hover
+{
+    color: var(--main-color);
+    border: 3px solid var(--main-color);
+}
+.content h3
+{
+    position: relative;
+}
+.content h3::before
+{
+    content: "";
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    left: 40%;
+    top: 150%;
+    background-color: var(--main-color);
+    transition: 1s;
+}
+.content:hover h3::before
+{
+  width: 80px;
+  left: 35%;
+}
+
+.fa-solid
+{
+    font-size: 70px;
+}
+.carousel-indicators [data-bs-target] {
+    background-color: var(--main-color);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link 
+{
+    background-color: var(--main-color);
+}
+.nav-pills .nav-link 
+{
+    color: black;
+    border-radius: 45%;
+}
+.picture
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.layer
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color:rgba(0, 0, 0, 0.541);
+    opacity: 0;
+    transition: .5s;
+}
+.picture:hover .layer
+{
+    opacity: 1;
+    top: 0;
+}
+.write
+{
+    width: 49%;
+}
+@media screen and (min-width :1200px)
+{
+ .scroll-icon
+ {
+    margin-top: 50px;
+ }
+}
+@media screen and (max-width :1200px)
+{
+   .write
+   {
+    width: 48%;
+   }
+}
+
+@media screen and (max-width :992px)
+{
+    main h1
+{
+    font-size: 45px;
+}
+.text
+{
+    width: 450px;
+}
+ .scroll-icon
+{
+    margin-top: 5px;
+} 
+.write
+   {
+    width: 100%;
+   } 
+    
+}
+
+@media screen and (max-width :600px)
+{
+    main h1
+{
+    font-size: 30px;
+}
+.text
+{
+    width: 300px;
+}
+.scroll-icon
+{
+    margin-top: 20px;
+}
+   .write
+   {
+    width: 100%;
+   } 
+}
