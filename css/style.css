@@ -184,6 +184,7 @@ body:has(#contact:target) li a[href="contact"]
    {
     width: 48%;
    }
+   
 }
 
 @media screen and (max-width :992px)
@@ -204,8 +205,14 @@ body:has(#contact:target) li a[href="contact"]
    {
     width: 100%;
    } 
+  .content h3::before
+   {
+
+    left: 42%;
     
+   } 
 }
+
 
 @media screen and (max-width :600px)
 {
@@ -225,4 +232,8 @@ body:has(#contact:target) li a[href="contact"]
    {
     width: 100%;
    } 
+   .gear
+{
+    top: 30%;
+}
 }
