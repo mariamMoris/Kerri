@@ -24,7 +24,7 @@ main h1
     height: 50px;
     position: absolute;
     left: 50%;
-    top: 65%;
+    top: 80%;
     border: 3px solid white;
     border-radius: 45%;
     animation: animate 1s infinite;
@@ -140,7 +140,6 @@ body:has(#contact:target) li a[href="contact"]
 .nav-pills .nav-link 
 {
     color: black;
-    border-radius: 45%;
 }
 .picture
 {
@@ -170,10 +169,6 @@ body:has(#contact:target) li a[href="contact"]
 }
 @media screen and (min-width :1200px)
 {
- .scroll-icon
- {
-    margin-top: 30px;
- }
 }
 @media screen and (max-width :1200px)
 {
@@ -183,7 +178,7 @@ body:has(#contact:target) li a[href="contact"]
    }  
    .scroll-icon
 {
-    top: 70%;
+    top: 85%;
 }
 }
 
@@ -213,9 +208,8 @@ body:has(#contact:target) li a[href="contact"]
    } 
    .scroll-icon
 {
-    top: 75%;
+    top: 85%;
 }
-   
 }
 @media screen and (max-width :600px)
 {
@@ -226,10 +220,6 @@ body:has(#contact:target) li a[href="contact"]
 .text
 {
     width: 300px;
-}
-.scroll-icon
-{
-    top: 75%;
 }
    .write
    {
