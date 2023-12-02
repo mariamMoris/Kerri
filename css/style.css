@@ -3,8 +3,6 @@
     --main-color: rgb(218, 60, 113);
 
 }
-
-
 main
 {
     min-height: 100%;
@@ -14,11 +12,11 @@ main
 }
 main h1
 {
-    font-size: 65px;
+    font-size: 60px;
 }
 .text
 {
-    width: 500px;
+    width: 600px;
 }
 .scroll-icon
 {
@@ -26,11 +24,10 @@ main h1
     height: 50px;
     position: absolute;
     left: 50%;
-    top: 80%;
+    top: 65%;
     border: 3px solid white;
     border-radius: 45%;
     animation: animate 1s infinite;
-    margin-top: 30px;
 }
 .scroll-icon::after
 {
@@ -61,9 +58,9 @@ main h1
 
 .gear
 {
-    position: absolute;
+    position: fixed;
     left: 0;
-    top: 50%;
+    top: 40%;
 }
 .arrow
 {
@@ -184,6 +181,10 @@ body:has(#contact:target) li a[href="contact"]
    {
     width: 48%;
    }  
+   .scroll-icon
+{
+    top: 70%;
+}
 }
 
 @media screen and (max-width :992px)
@@ -210,10 +211,11 @@ body:has(#contact:target) li a[href="contact"]
     left: 42%;
     
    } 
-   .gear
+   .scroll-icon
 {
-    top: 0%;
+    top: 75%;
 }
+   
 }
 @media screen and (max-width :600px)
 {
@@ -227,14 +229,10 @@ body:has(#contact:target) li a[href="contact"]
 }
 .scroll-icon
 {
-    margin-top: 0px;
+    top: 75%;
 }
    .write
    {
     width: 100%;
    } 
-   .gear
-{
-    top: 0%;
-}
 }
