@@ -83,9 +83,9 @@ body:has(#home:target) li a[href="#home"],
 body:has(#about:target) li a[href="#about"],
 body:has(#services:target) li a[href="#services"],
 body:has(#client:target) li a[href="#client"],
-body:has(#portfolio:target) li a[href="portfolio"],
-body:has(#blog:target) .li a[href="blog"],
-body:has(#contact:target) li a[href="contact"]
+body:has(#portfolio:target) li a[href="#portfolio"],
+body:has(#blog:target) li a[href="#blog"],
+body:has(#contact:target) li a[href="#contact"]
 {
     color: var(--main-color);
 }
@@ -132,6 +132,13 @@ body:has(#contact:target) li a[href="contact"]
 }
 .carousel-indicators [data-bs-target] {
     background-color: var(--main-color);
+    width: 20px;
+    height: 8px;
+    border-radius: 50%;
+}
+.w-10
+{
+    width: 10%;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link 
 {
